@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
+import com.bumptech.glide.Glide
 import com.jeff.weatherapp.api.Current
 import com.jeff.weatherapp.api.Location
 import com.jeff.weatherapp.api.NetworkResponse
@@ -55,9 +56,9 @@ class MainActivity : AppCompatActivity() {
                         binding.tvTemp.text = "${current.temp_c} °C"
                         binding.tvCondition.text = current.condition.text
                         // Load image using your preferred image loading library (e.g., Glide)
-                        // Glide.with(this)
-                        //      .load("https:${current.condition.icon}".replace("64x64", "128x128"))
-                        //      .into(binding.ivCondition)
+                         Glide.with(this)
+                              .load("https:${current.condition.icon}".replace("64x64", "128x128"))
+                              .into(binding.ivCondition)
 
                         binding.tvHumidity.text = current.humidity
                         binding.tvWindSpeed.text = "${current.wind_kph} km/h"

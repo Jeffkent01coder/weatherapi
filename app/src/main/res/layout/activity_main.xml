@@ -112,7 +112,7 @@
             android:layout_height="160dp"
             android:layout_gravity="center"
             android:contentDescription="Condition icon"
-            android:src="@drawable/weather" />
+            android:src="@drawable/ic_launcher_background" />
 
         <!-- Weather Condition Text -->
         <TextView
