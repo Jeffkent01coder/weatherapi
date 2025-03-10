@@ -1,6 +1,6 @@
 package com.jeff.weatherapp.api
 
-
+//0dcfb5a31ed2498abe2145800251003
 data class Current(
     val cloud: String,
     val condition: Condition,
